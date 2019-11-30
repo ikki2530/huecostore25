@@ -1,0 +1,63 @@
+{% extends 'index.html' %}
+{% load staticfiles %}
+{% block titulo %} Hogar {% endblock titulo %}
+
+<!--Carousel-->
+
+{% block carousel %}
+
+<!--Start carousel-->
+<div class="container">
+  <div class="carousel slide" id="carousel-indicators" data-ride="carousel" data-interval="3000">
+    <ol class="carousel-indicators">
+      <li class="active" data-target="#carousel-indicators" data-slide-to="0"></li>
+      <li data-target="#carousel-indicators" data-slide-to="1"></li>
+      <li data-target="#carousel-indicators" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a href="#">
+
+          <img class="img-fluid d-md-none" src="{% static 'img/mobileNike.jpg' %}" alt="">
+          <img class="img-fluid d-none d-md-block " src="{% static 'img/dormitorio.jpg' %}" style="max-height:600px !important; object-fit:cover;">
+
+        </a>
+      </div>
+
+      <div class="carousel-item">
+        <a href="#">
+
+          <img class="img-fluid d-md-none" src="{% static 'img/mobileNike.jpg' %}" alt="">
+          <img class="img-fluid d-none d-md-block" src="{% static 'img/colchon1.jpg' %}" style="max-height:600px !important; object-fit:cover;">
+
+        </a>
+      </div>
+
+      <div class="carousel-item">
+        <a href="#">
+
+          <img class="img-fluid d-md-none" src="{% static 'img/mobileNike.jpg' %}" alt="">
+          <img class="img-fluid d-none d-md-block" src="{% static 'img/colchon2.jpg' %}" style="max-height:600px !important; object-fit:cover;">
+
+        </a>
+      </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#carousel-indicators" role="button" data-slide="prev">
+      <i class="fas fa-chevron-left text-clipped"></i>
+    </a>
+
+    <a class="carousel-control-next" href="#carousel-indicators" role="button" data-slide="next">
+      <i class="fas fa-chevron-right text-clipped"></i>
+    </a>
+
+  </div>
+
+
+</div>
+<!--end carousel-->
+
+{% endblock carousel %}
+
+<!-- End Carousel-->

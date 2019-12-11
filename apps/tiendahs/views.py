@@ -14,7 +14,7 @@ def home(request):
             Q(descripcion__icontains = queryset)
         ).distinct()
 
-    paginator = Paginator(productos, 4) #instancia de la clase Paginator
+    paginator = Paginator(productos, 12) #instancia de la clase Paginator
     page = request.GET.get('page') # página en la que nos encontramos
     productos = paginator.get_page(page)
 
@@ -27,7 +27,7 @@ def home(request):
 def detalleProducto(request, slug):
 
     producto = get_object_or_404(Producto, slug = slug)
-    
+
     return render(request, 'mostrarProducto.html', {'detalle_producto':producto })
 
 
@@ -47,7 +47,7 @@ def hogar(request):
 
         ).distinct()
 
-    paginator = Paginator(productos, 4) #instancia de la clase Paginator
+    paginator = Paginator(productos, 12) #instancia de la clase Paginator
     page = request.GET.get('page') # página en la que nos encontramos
     productos = paginator.get_page(page)
 
@@ -69,7 +69,7 @@ def modaAccesorios(request):
             categoria = Categoria.objects.get(nombre__iexact = 'Moda & Accesorios')
         ).distinct()
 
-    paginator = Paginator(productos, 4) #instancia de la clase Paginator
+    paginator = Paginator(productos, 12) #instancia de la clase Paginator
     page = request.GET.get('page') # página en la que nos encontramos
     productos = paginator.get_page(page)
 

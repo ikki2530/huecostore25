@@ -19,7 +19,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('estocolmo312/', admin.site.urls),
     path('', include(('apps.tiendahs.urls', 'tienda'))),  # enlace de tienda/urls con urls generales
 ]
 

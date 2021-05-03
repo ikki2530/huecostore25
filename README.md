@@ -4,14 +4,11 @@
 * [Description](#description)
 * [Installation](#installation)
 * [File Descriptions](#file-descriptions)
-* [Examples of use](#examples-of-use)
-* [Bugs](#bugs)
 * [Authors](#authors)
-* [License](#license)
 
 
 # Description
-Project with some ecommerce features:
+Project about an store product section.
 - Product section.
 - slides to show the main products.
 - Products search bar.
@@ -35,11 +32,26 @@ Project with some ecommerce features:
 
 [manage.py](manage.py) - Script to run administrative tasks
 
+### `apps/` directory with the backend development of the store.
+
+#### `apps/tiendahs/` - Contains the product section development
+- [urls.py](apps/tiendahs/urls.py) - This file contains the URL of the app.
+- [views.py](apps/tiendahs/views.py) - Contains the views of the products and its categories.
+- [models.py](apps/tiendahs/models.py) - Contains the models which allows create the database and its tables.
+- [admin.py](apps/tiendahs/admin.py) - register the modules to show them in the admin dashboard.
+
+#### `hueco_store2` - Contain the main settings and urlsof the project
+
+- [settings.py](hueco_store2/settings.py) - contains all the configuration of Django installation. This document explains how settings work and which settings are available.
+
+- [urls.py](hueco_store2/urls.py) - Main project URLS.
+
+#### `media/` - Contain media files uploaded, images in this case.
+
+#### `static/` - Contain the css, some images and javascript files
+
+#### `templates/` - Contains the HTML files for the whole project.
 
 
-
-
-
-
-
-
+## Authors
+* Diego Gomez- [Linkedin](https://www.linkedin.com/in/diegogomez8/) / [Twitter](https://twitter.com/dagomez2530)

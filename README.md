@@ -2,8 +2,8 @@
 
 ## Table of Content
 * [Description](#description)
-* [How to use](#how-to-use)
 * [Installation](#installation)
+* [How to use](#how-to-use)
 * [File Descriptions](#file-descriptions)
 * [Authors](#authors)
 
@@ -16,22 +16,6 @@ Project about an store product section.
 - Categories for products.
 - Admin options to add products, description, features, new providers, etc.
 
-# How to use
-
-
-To add a new product go to {yourdomain}/admin login with your superuser and then select [products -> add product] and fill the following form.
-
-![image](./static/img/create_product.png)
-
-
-The webpage home contains the products, search bar and pagination
-
-![image](./static/img/products.png)
-
-
-Product Details: select a product and you can see detailed product information (description, price discounts, shipping details, etc)
-
-![image](./static/img/product_details.png)
 
 # Installation
 
@@ -44,6 +28,24 @@ Product Details: select a product and you can see detailed product information (
 7. Finally, run the server `python manage.py runserver`
 
 Note: Before running the project make sure you created the DB.
+
+
+# How to use
+
+
+To add a new product go to {yourdomain}/admin login with your superuser and then select [products -> add product] and fill the following form.
+
+![image](./static/img/create_product.png)
+
+
+The webpage home contains the products.
+
+![image](./static/img/products.png)
+
+
+Product Details: select a product and you can see detailed product information (description, price discounts, shipping details, etc).
+
+![image](./static/img/product_details.png)
 
 ## File Descriptions
 [requirements.txt](requirements.txt) - The configuration file requirements.txt allows to install the specified packages (Django, gunicorn, pillow, etc) necessary for the development of the website.
